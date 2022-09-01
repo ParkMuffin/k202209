@@ -1,0 +1,46 @@
+lib에 4개넣고 (7장2개, mysql connect j 에 있는거, ojdbc8.jar)
+
+data source Explorer에서 맨위거 new
+
+Oracle로 들어가서
+
+Name/Type Oracle Thin Driver 버전 11
+
+-> Jar List로 가서 14? 지우고
+
+sqldeveloper > jdbc > lib에 ojdbc8 jar 추가
+
+
+service name : xe
+
+host : 127.0.0.1
+
+user name : scott
+
+password : tiger
+
+세이브 패스워드 체크하고
+
+catalog DBA로 변경
+
+test connection 눌러보면 맞는지 아닌지 확인가능 success뜨면 맞음
+
+
+안될 시 윈도우e 내피씨 우클릭 서비스
+
+-ORACLe 어쩌고들 실행(자동이라 적힌애들만?)
+
+
+
+
+mysql도 똑같은데
+
+new 5.1 있던거 지우고 새로운거 programfile(86) mysql connector J 가서 있는거 추가
+
+database: test
+url : jdbc:mysql://localhost:3306/test?useSSL=false&serverTimezone=UTC&allowPublicKeyRetrieval=true
+패스워드 : mysql
+
+
+
+하고피니쉬
